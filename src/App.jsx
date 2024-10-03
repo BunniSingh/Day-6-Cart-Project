@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import './App.css'
-import Navbar from './Components/Nevbar';
+import './App.css';
 import PhoneList from './Components/PhoneCard';
 function App() {
   
   return (
     <>
-      <Navbar/>
       <PhoneList />
     </>
   )

@@ -1,6 +1,7 @@
 import './Common.css';
 
-const Navbar = () => {
+const Navbar = ({totalItem}) => {
+    console.log(totalItem);
     return (
         <nav>
             <div className="logo">
@@ -15,7 +16,7 @@ const Navbar = () => {
             </ul>
             <div className="cart">
             <i class="fa-solid fa-cart-plus"></i>
-            <span class='cart-value'>6</span>
+            <span class='cart-value'>{totalItem}</span>
             </div>
         </nav>
     )
